@@ -21,7 +21,7 @@ function renderProducts(count) {
   productList.innerHTML = "";
   const productsToShow = allProducts.slice(0, count);
 
-  productsToShow.forEach(product => {
+  productsToShow.forEach((product) => {
     const div = document.createElement("div");
     div.className = "product-card";
     div.innerHTML = `
@@ -43,3 +43,4 @@ showAllBtn.addEventListener("click", () => {
 });
 
 getProducts();
+console.log("System the end!");
